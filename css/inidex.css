@@ -1,0 +1,25 @@
+@import './icons.css';
+
+:root {
+    --primaryColor: #00B050;
+    --myWhite: #ffffff;
+    --gray10: #B3B3B3;
+    --gray20: #737373;
+    --gray30: #282828;
+    --gray40: #181818;
+    --gray50: #121212;
+    --myBlack: #000000;
+}
+
+body{
+    background: var(--gray30);
+}
+
+button{
+    font-size: 40px;
+    color: var(--primaryColor);
+}
+
+button:hover{
+    color: black;
+}
