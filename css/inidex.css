@@ -1,5 +1,9 @@
 @import './icons.css';
 @import './font.css';
+@import './body.css';
+@import './link.css';
+@import './button-icon.css';
+
 
 :root {
     --primaryColor: #00B050;
@@ -16,19 +20,5 @@
     --baseFont: normal .875rem/1.375rem var(--basefontFamily);
     --baseFontBold: bold .875rem/1.375rem var(--basefontFamily);
     --button: bold .875rem/1rem var(--basefontFamily);
-    
-}
-
-body{
-    background: var(--gray30);
-    font-family: var(--basefontFamily);
-}
-
-button{
-    font-size: 40px;
-    color: var(--primaryColor);
-}
-
-button:hover{
-    color: black;
+    --small: normal 0.75em/normal var(--basefontFamily)
 }
