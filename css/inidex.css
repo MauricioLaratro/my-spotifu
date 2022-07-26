@@ -1,4 +1,5 @@
 @import './icons.css';
+@import './font.css';
 
 :root {
     --primaryColor: #00B050;
@@ -9,10 +10,18 @@
     --gray40: #181818;
     --gray50: #121212;
     --myBlack: #000000;
+    --basefontFamily: Avenir, Helvetica, sans-serif;
+    --headline1: bold 2rem/normal var(--basefontFamily);
+    --tite1: bold 1.5rem/1.75rem var(--basefontFamily);
+    --baseFont: normal .875rem/1.375rem var(--basefontFamily);
+    --baseFontBold: bold .875rem/1.375rem var(--basefontFamily);
+    --button: bold .875rem/1rem var(--basefontFamily);
+    
 }
 
 body{
     background: var(--gray30);
+    font-family: var(--basefontFamily);
 }
 
 button{
