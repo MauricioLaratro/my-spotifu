@@ -1,0 +1,25 @@
+.list{
+    padding-inline-start: 1rem;
+    padding-inline-end: 6rem;
+}
+
+.list-title{
+    font: var(--baseFont);
+    margin-block-start: 0;
+    margin-block-end: .5rem;
+}
+
+.list-content{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.list-item a{
+    font: var(--baseFontBold);
+    transition: color .2s;
+    /* (esta transition es para que al hacer hover en las a no cambie el color de golpe, si no que tenga una transicion mas bonita de 0.2 segundos) */
+}
