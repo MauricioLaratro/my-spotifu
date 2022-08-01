@@ -1,0 +1,43 @@
+.slider {
+    inline-size: 200px;
+    background: rgba(255,255,255,.2);
+    block-size: .25rem;
+    border-radius: .25rem;
+}
+
+.slider-progress{
+    block-size: inherit;
+    /* el valor inherit sirve para que este elemento, en esa propiedad, herede los mismos valores que tiene su elemento padre, en este caso que herede los valores de .slider */
+    background: var(--myWhite);
+    inline-size: 20%;
+    border-radius: inherit;
+    position: relative;
+}
+
+.slider:hover .slider-progress{
+    background: var(--primaryColor);
+}
+
+.slider-button{
+    background: var(--myWhite);
+    padding: 0;
+    border: 0;
+    block-size: 200%;
+    /* el porcentaje siempre se aplica a los valores del padre, en este caso el valor de .slider que es .25rem, al hacerlo con 200% el valor de slider-button seria .5rem */
+    aspect-ratio: 1/1;
+    /* aspect-ratio de 1/1 sirve para igualar los valores del block size y aplicarlo al inline-size (en este caso), es decir con ese voler estamos diciendo que el elemento sea cuadrado */
+    border-radius: 50%;
+    position: absolute;
+    left: 100%;
+    /* left 100% hace que el circulo del slider se posicione al final de su padre es decir al final (horizontal, es decir a la derecha del todo) del slider progress */
+    top: 50%;
+    /* top 50% hace que el slider button se posicione en la parte inferior de su padre, es decir el slider progress */
+    transform: translate(-50%, -50%);
+    /* transform translate (x, y) hace que se mueva el button -50% hacia arriba y hacia la izquierda, el 50% es de su propio tamaño en este caso, no es en referencia al tamaño de su padre como en el caso anterior */
+    display: none;
+    /* display none para que el boton no se vea normalmente y que solo aparezca cuando hacemos hover en el slider. para eso usamos la regla slider:hover .slider-button... display: block */
+}
+
+.slider:hover .slider-button{
+     display: block;
+}
