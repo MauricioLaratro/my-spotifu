@@ -1,0 +1,58 @@
+.playlistA{
+    inline-size: 13em;
+    padding: 1rem;
+    border-radius: .25rem;
+    background: var(--gray40);
+    box-sizing: border-box;
+    transition: .3s background;
+}
+
+.playlistA:hover, .playlistA:focus-within{
+    /* el selector con la pseudo clase de focus-within es para que se activen las propiedades al hacer focus en el elemento (con el tab) y pase lo mismo que cuando hacemos hover, esto es para los usuarios no videntes que utilizan screen readers */
+    background: var(--gray30);
+    cursor: pointer;
+}
+
+.playlistA-cover img{
+    vertical-align: middle;
+}
+
+.playlistA-cover{
+    position: relative;
+    border-radius: .75rem;
+    overflow: hidden;
+    margin-block-end: 1rem;
+}
+
+.playlistA button{
+    position: absolute;
+    right: .5rem;
+    bottom: .5rem;
+    opacity: 0;
+    /* opacity 0 para que el boton no se vea mientras no se interactue con la playlist */
+    transform: translateY(.5rem);
+    /* translatey .5rem para que el boton este situado mas abajo */
+    transition: .3s opacity, .3s transform;
+    /* transition: .3s opacity, .3s transform; para que la animacion de que el boton aparezca y salga desde abajo hacia arriba al hacer hover en la playlist sea con un movimiento mas smooth */
+    will-change: opacity, transform;
+    /* will-change avisará al navegador que algo pasará con esos elementos. Anticipa el movimiento que ocurrirá y eso es bueno tanto para rendimiento como de cara a Google respecto a tu página */
+}
+
+.playlistA:hover .playlistA-cover button, .playlistA:focus-within .playlistA-cover button{
+    /* el selector con la pseudo clase de focus-within es para que se activen las propiedades al hacer focus en el elemento (con el tab) y pase lo mismo que cuando hacemos hover, esto es para los usuarios no videntes que utilizan screen readers */
+    opacity: 1;
+    /* cambiamos el opacity a 1 cuando hacemos hover en una transicion que dura .3 segundos, para generar el efecto de que aparezca el boton de play cuando nos situamos en la playlist */
+    transform: translateY(0)
+    /* translatey 0 para que al hacer hover el boton suba los .5 rem que le habiamos sacado anteriormente */
+}
+
+.playlistA-title{
+    font: var(--baseFontBold);
+    color: var(--myWhite);
+    margin: 0;
+}
+
+.playlistA-description{
+    font: var(--baseFont);
+    margin: 0;
+}
