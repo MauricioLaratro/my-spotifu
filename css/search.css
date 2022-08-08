@@ -1,0 +1,28 @@
+.search{
+    position: relative;
+}
+
+.search i{
+    position: absolute;
+    font-size: 1rem;
+    left: .5rem;
+    top: calc(50% - .5rem);
+    /* el calculo que hacemos en top es para que la lupa se centre y sea escalable, es decir que permanezca centrado aunque cambie el tamaño del elemento. */
+    block-size: 1rem;
+    color: var(--myBlack);
+}
+
+.search input{
+    font: var(--baseFont);
+    color: var(--gray30);
+    border-radius: 1.25rem;
+    border: none;
+    max-inline-size: 22rem;
+    width: 100%;
+    padding: .5rem;
+    padding-inline-start: 2rem;
+}
+
+.search input::-webkit-input-placeholder{
+    color: var(--gray10);
+}
