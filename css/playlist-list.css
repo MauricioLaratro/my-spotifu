@@ -1,10 +1,13 @@
+@import './playlist-a.css';
+@import './playlist-b.css';
+
 .playlistList{
 
 }
 
-.playlistList-container::-webkit-scrollbar{
+/* .playlistList-container::-webkit-scrollbar{
     display: none;
-}
+} */
 
 .playlistList-top{
     padding-block-end: .5rem;

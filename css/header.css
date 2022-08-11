@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    gap: 1rem;
+    padding-inline-start: 1.5rem;
+    padding-inline-end: 1.5rem;
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    align-items: center;
+}
+
+@supports not(backdrop-filter: blur(5px)){
+    .header{
+        background: var(--gray50);
+    }
+}
+/* la regla de @supports not () la utilizamos para que se activen los valores que ponemos entre corchetes solo si el navegador utilizado no soporta los valores que indicamos entre parentesis dentro de la regla, en este caso se utiliza porque safari no soporta la propiedad de back-drop. Al estar utilizando chrome que si soporta back-drop, nunca se activara esta regla en este navegador. */
