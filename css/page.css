@@ -13,11 +13,11 @@
 .page-block{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 2em;
 }
 
 .page .header{
     margin-block-end: 1rem;
-    margin-inline-start: -2rem;
-    margin-inline-end: -2rem;
+    margin-inline-start: -1.5rem;
+    margin-inline-end: -1.5rem;
 }

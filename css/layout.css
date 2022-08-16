@@ -1,0 +1,36 @@
+:root{
+    --sidebarInlineSize: 15rem;
+    --minBlockSize: 37.5rem;
+    --minInlineSize: 48rem;
+    --bottonSize: 5.5rem;
+}
+
+.layout{
+    min-inline-size: var(--minInlineSize);
+}
+
+.layout-block{
+    display: flex;
+}
+
+.layout-sidebar{
+    block-size: calc(100vh - var(--bottonSize));
+    /* el calculo que utilizamos es el 100 vh que es el 100% del viewport menos el temaño del botton, el resultado de esto sera el blocksize del elemento, para que no genere scrolls no deseados */
+    min-block-size: var(--minBlockSize);
+    inline-size: var(--sidebarInlineSize);
+    overflow: auto;
+    flex-shrink: 0;
+    background: var(--myBlack);
+}
+
+.layout-main{
+    block-size: calc(100vh - var(--bottonSize));
+    min-block-size: var(--minBlockSize);
+    overflow: auto;
+    /* overflow-x: hidden; */
+}
+
+.layout-bottom{
+    block-size: var(--bottonSize);
+    flex: 1;
+}

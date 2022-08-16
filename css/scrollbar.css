@@ -1,0 +1,13 @@
+::-webkit-scrollbar{
+    inline-size: .5rem;
+    block-size: .5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--myBlack);
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--gray50);
+}
