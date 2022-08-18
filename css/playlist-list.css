@@ -1,9 +1,9 @@
 @import './playlist-a.css';
 @import './playlist-b.css';
 @import './search-playlist-genero.css';
+@import './search-explorar.css';
 
 .playlistList{
-
 }
 
 /* .playlistList-container::-webkit-scrollbar{

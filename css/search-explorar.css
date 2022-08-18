@@ -1,0 +1,189 @@
+.searchExplorar-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* overflow-x: auto; */
+    gap: 1rem;
+    /* position: relative; */
+    flex-shrink: 0;
+}
+
+.searchExplorar{
+    background: rgb(39, 133, 106, .7);
+    transition: .3s background;
+    overflow: hidden;
+    display: flex;
+    block-size: 10rem;
+    inline-size: 10rem;
+    border-radius: .5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.searchExplorar img{
+    block-size: 5.555555555555556rem;
+    inline-size: 5.555555555555556rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    transform: rotate(25deg) translate(18%,-2%);
+}
+
+.searchExplorar-details{
+    display: flex;
+    justify-content: flex-start;
+    padding-block-start: 1rem;
+    padding-inline-start: 1rem;
+    /* gap: .5rem; */
+    align-items: flex-start;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.searchExplorar-title{
+    font-size: 1.333333333333333rem ;
+    margin: 0;
+    color: var(--myWhite);
+    padding: 0;
+    margin: 0;
+}
+
+
+.searchExplorar:hover, .searchExplorar:focus-within{
+    background: rgb(39, 133, 106, 1);
+}
+
+
+.searchExplorar:nth-child(2){
+    background: rgb(30, 50, 100, .7);
+}
+
+.searchExplorar:nth-child(2):hover, .searchExplorar:nth-child(2):focus-within{
+    background: rgb(30, 50, 100, 1);
+}
+
+
+.searchExplorar:nth-child(3){
+    background: rgb(141, 103, 171, .7);
+}
+
+.searchExplorar:nth-child(3):hover, .searchExplorar:nth-child(2):focus-within{
+    background: rgb(141, 103, 171, 1);
+}
+
+
+.searchExplorar:nth-child(4){
+    background: rgb(232, 17, 91, .7);
+}
+
+.searchExplorar:nth-child(4):hover, .searchExplorar:nth-child(2):focus-within{
+    background: rgb(232, 17, 91, 1);
+}
+
+
+.searchExplorar:nth-child(5){
+    background: rgb(141, 103, 171, .7);
+}
+
+.searchExplorar:nth-child(5):hover, .searchExplorar:nth-child(2):focus-within{
+    background: rgb(141, 103, 171, 1);
+}
+
+
+.searchExplorar:nth-child(6){
+    background: rgb(30, 50, 100, .7);
+}
+
+.searchExplorar:nth-child(6):hover, .searchExplorar:nth-child(2):focus-within{
+    background: rgb(30, 50, 100, 1);
+}
+
+
+.searchExplorar:nth-child(7){
+    background: rgb(180, 155, 200, .7);
+}
+
+.searchExplorar:nth-child(7):hover, .searchExplorar:nth-child(2):focus-within{
+    background: rgb(180, 155, 200, 1);
+}
+
+
+.searchExplorar:nth-child(8){
+    background: rgb(80, 155, 245, .7);
+}
+
+.searchExplorar:nth-child(8):hover, .searchExplorar:nth-child(2):focus-within{
+    background: rgb(80, 155, 245, 1);
+}
+
+
+.searchExplorar:nth-child(9){
+    background: rgb(240, 55, 165, .7);
+}
+
+.searchExplorar:nth-child(9):hover, .searchExplorar:nth-child(2):focus-within{
+    background: rgb(240, 55, 165, 1);
+}
+
+
+.searchExplorar:nth-child(10){
+    background: rgb(71, 125, 149, .7);
+}
+
+.searchExplorar:nth-child(10):hover, .searchExplorar:nth-child(2):focus-within{
+    background: rgb(71, 125, 149, 1);
+}
+
+
+.searchExplorar:nth-child(11){
+    background: rgb(165, 103, 82, .7);
+}
+
+.searchExplorar:nth-child(11):hover, .searchExplorar:nth-child(2):focus-within{
+    background: rgb(165, 103, 82, 1);
+}
+
+
+.searchExplorar:nth-child(12){
+    background: rgb(220, 20, 140, .7);
+}
+
+.searchExplorar:nth-child(12):hover, .searchExplorar:nth-child(2):focus-within{
+    background: rgb(220, 20, 140, 1);
+}
+
+
+.searchExplorar:nth-child(13){
+    background: rgb(141, 103, 171, .7);
+}
+
+.searchExplorar:nth-child(13):hover, .searchExplorar:nth-child(2):focus-within{
+    background: rgb(141, 103, 171, 1);
+}
+
+
+.searchExplorar:nth-child(14){
+    background: rgb(71, 125, 149, .7);
+}
+
+.searchExplorar:nth-child(14):hover, .searchExplorar:nth-child(2):focus-within{
+    background: rgb(71, 125, 149, 1);
+}
+
+
+.searchExplorar:nth-child(15){
+    background: rgb(20, 138, 8, .7);
+}
+
+.searchExplorar:nth-child(15):hover, .searchExplorar:nth-child(2):focus-within{
+    background: rgb(20, 138, 8, 1);
+}
+
+
+.searchExplorar:nth-child(16){
+    background: rgb(71, 125, 149, .7);
+}
+
+.searchExplorar:nth-child(16):hover, .searchExplorar:nth-child(2):focus-within{
+    background: rgb(71, 125, 149, 1);
+}
