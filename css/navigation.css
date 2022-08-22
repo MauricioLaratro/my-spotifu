@@ -19,10 +19,10 @@
 
 .navigation-prev i{
     position: relative;
-    left: -1px;
+    left: -.0555555555555556rem;
 }
 
 .navigation-next i{
     position: relative;
-    left: 1px;
+    left: .0555555555555556rem;
 }

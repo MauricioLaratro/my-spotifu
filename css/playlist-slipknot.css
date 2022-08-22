@@ -1,0 +1,62 @@
+.encabezado{
+    display: flex;
+    block-size: 12.77777777777778rem;
+    inline-size: 35.55555555555556rem;
+    gap: 2.4rem;
+    padding: 0;
+    margin: 0;
+    flex-shrink: 0;
+
+}
+
+.encabezadoCover{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+
+}
+
+.encabezadoCover img{
+    block-size: 12.77777777777778rem;
+    inline-size: 12.77777777777778rem;
+
+}
+
+.encabezadoDetails{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.encabezadoTitle{
+    font: var(--headline1);
+    color: var(--myWhite);
+
+}
+
+
+.encabezadoDetails h3{
+    margin: 0;
+}
+
+.encabezadoDetails button h3{
+    font-size: 1rem;
+}
+
+.encabezadoButton{
+    position: absolute;
+    bottom: 0;
+}
+
+.encabezadoButton-icon{
+    inline-size: 8.5rem;
+    block-size: 1.777777777777778rem;
+    background: transparent;
+    border-radius: 3.888888888888889rem;
+    border: none;
+    cursor: pointer;
+    background: var(--primaryColor);
+    color: var(--myWhite);
+}
