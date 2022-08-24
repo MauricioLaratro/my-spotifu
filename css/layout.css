@@ -28,6 +28,7 @@
     min-block-size: var(--minBlockSize);
     overflow: auto;
     /* overflow-x: hidden; */
+    flex-grow: 1;
 }
 
 .layout-bottom{

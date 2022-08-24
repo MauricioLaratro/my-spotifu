@@ -13,7 +13,20 @@
     color: var(--gray50);
 }
 
-.buttonIcon.is-primary{
+.buttonIcon.icon-play.is-normal{
+    color: white;
+    background: transparent;
+    border: 1px solid var(--myWhite);
+    font-size: .9rem;
+}
+
+.buttonIcon.icon-heart.is-normal{
+    color: white;
+    background: transparent;
+    font-size: 1rem;
+}
+
+.buttonIcon .is-primary{
     background: var(--primaryColor);
     color: var(--myWhite);
 }
@@ -31,3 +44,5 @@
 .buttonIcon:active{
     transform: scale(.95);
 }
+
+/* DIVIDIR Y ANIDAR LOS ITEMS Y LAS DESCRIPCIONES DE ARRIBA (TITULO, ARTISTA, ETC) EN COLUMNAS MEJOR, PARA PODER ALINEAR DE MANERA MAS SENCILLA */

@@ -63,10 +63,12 @@
 
 
 .slipknotPage-block{
+    border: 1px solid red;
     display: flex;
     flex-direction: column;
-    gap: 2em;
-    border: 1px solid green;
+    /* overflow: hidden; */
+    overflow: hidden;
+    /* align-items: flex-start; */
 }
 
 
@@ -76,6 +78,7 @@
     display: flex;
     gap: .5rem;
     position: relative;
+    margin-bottom: 2.2222222222222222222222222222222rem;
 }
 
 .songFilter span{
@@ -88,20 +91,47 @@
     top: calc(50% - .5rem);
     /* el calculo que hacemos en top es para que la lupa se centre y sea escalable, es decir que permanezca centrado aunque cambie el tamaño del elemento. */
     block-size: 1rem;
-
 }
 
 .songDetails{
     display: flex;
-    justify-content: space-between;
+    gap: 12.77777777777778rem;
     padding-inline-start: 5rem;
+    justify-content: space-between;
 }
 
-.songDetails i{
-    font-size: 1rem;
+.songDetails-details{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    gap: 2rem;
+}
+
+.songDetails-date{
+    display: flex;
+    align-items: center;
+    inline-size: 8.333333333333333rem;
+    gap: 3.888888888888889rem;
 }
 
 .songList{
-    display: flex;
     color: var(--myWhite);
+    display: flex;
+    align-items: flex-start;
+    font: var(--baseFont);
 }
+
+.songList li{
+    list-style: none;
+    display: flex;
+    /* border: 1px solid green; */
+    align-items: center;
+    gap: 1.1rem;
+    
+}
+
+.songList ul{
+    padding: 0;
+}
+
+/* DIVIDIR Y ANIDAR LOS ITEMS Y LAS DESCRIPCIONES DE ARRIBA (TITULO, ARTISTA, ETC) EN COLUMNAS MEJOR, PARA PODER ALINEAR DE MANERA MAS SENCILLA */
