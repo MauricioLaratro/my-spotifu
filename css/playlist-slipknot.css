@@ -6,7 +6,7 @@
     padding: 0;
     margin: 0;
     flex-shrink: 0;
-
+    margin-block-end: 1rem;
 }
 
 .encabezadoCover{
@@ -58,5 +58,50 @@
     border: none;
     cursor: pointer;
     background: var(--primaryColor);
+    color: var(--myWhite);
+}
+
+
+.slipknotPage-block{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    border: 1px solid green;
+}
+
+
+
+.songFilter{
+    margin-block-start: 1rem;
+    display: flex;
+    gap: .5rem;
+    position: relative;
+}
+
+.songFilter span{
+    padding-inline-start: 1.5rem;
+}
+
+.songFilter i{
+    position: absolute;
+    font-size: 1rem;
+    top: calc(50% - .5rem);
+    /* el calculo que hacemos en top es para que la lupa se centre y sea escalable, es decir que permanezca centrado aunque cambie el tamaño del elemento. */
+    block-size: 1rem;
+
+}
+
+.songDetails{
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 5rem;
+}
+
+.songDetails i{
+    font-size: 1rem;
+}
+
+.songList{
+    display: flex;
     color: var(--myWhite);
 }
