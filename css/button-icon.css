@@ -13,20 +13,20 @@
     color: var(--gray50);
 }
 
-.buttonIcon.icon-play.is-normal{
+.buttonIcon.is-normal{
     color: white;
     background: transparent;
     border: 1px solid var(--myWhite);
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
-.buttonIcon.icon-heart.is-normal{
+.buttonIcon.is-normalHeart{
     color: white;
     background: transparent;
     font-size: 1rem;
 }
 
-.buttonIcon .is-primary{
+.buttonIcon.is-primary{
     background: var(--primaryColor);
     color: var(--myWhite);
 }
